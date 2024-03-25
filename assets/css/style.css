@@ -1,0 +1,15 @@
+/* J2J Institute */
+
+:root {
+    --accent: #00aeff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
