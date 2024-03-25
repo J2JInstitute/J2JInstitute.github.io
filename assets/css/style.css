@@ -1,15 +1,69 @@
-/* J2J Institute */
+/* https://j2jinstitute.com */
 
 :root {
-    --accent: #00aeff;
+    --accent: #47fda0;
+    --accent-other: #4794fd;
+    --logo-color: #ff6a00;
+    --text-color: #000000;
+    --background: #ffffff;
 }
 
 body {
+    background-color: var(--background);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
 a {
-    cursor: pointer;
     text-decoration: none;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.nav-item {
+    float: left;
+}
+  
+.nav-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-item a:hover:not(.nav-focused) {
+    background-color: #111;
+}
+
+.nav-focused {
+    background-color: #04AA6D;
+}
+
+/*
+Small Screen
+*/
+@media only screen and (max-width: 600px) {
+    
+
+
+}
+
+/*
+Large Screen
+*/
+@media only screen and (min-width: 600px) {
+
+
+
 }
