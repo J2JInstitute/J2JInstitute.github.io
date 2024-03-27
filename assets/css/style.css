@@ -1,0 +1,15 @@
+:root {
+    --background: #aae4ff;
+    --text-color: #111111;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+main {
+    padding-top: 0;
+}
