@@ -91,7 +91,7 @@
   --tertiary-color: rgba(33, 37, 41, 0.5);
   --tertiary-color-rgb: 33, 37, 41;
   --tertiary-bg: #f8f9fa;
-  --tertiary-bg-rgb: 248, 249, 250;
+  --tertiary-bg-rgb: 227, 242, 253;
   --heading-color: inherit;
   --link-color: #0d6efd;
   --link-color-rgb: 13, 110, 253;
@@ -3977,7 +3977,9 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--navbar-padding-y) var(--navbar-padding-x);
+  box-shadow: #00000080 2px 2px;
 }
+
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-sm,
@@ -8873,6 +8875,11 @@ textarea.form-control-lg {
   background-color: rgba(var(--tertiary-bg-rgb), var(--bg-opacity)) !important;
 }
 
+.bg-navbar {
+  background-color: rgba(var(--tertiary-bg-rgb), 0.6);
+  backdrop-filter: blur(10px);
+}
+
 .bg-opacity-10 {
   --bg-opacity: 0.1;
 }
@@ -12052,6 +12059,23 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 7px;
+}
+
+.main-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  width: 80vw;
+  height: 100%;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
