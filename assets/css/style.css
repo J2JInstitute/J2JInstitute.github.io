@@ -206,6 +206,10 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+main {
+  padding-top: 2rem;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -3489,6 +3493,9 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 576px) {
+  .nav-link {
+    font-size: 12pt;
+  }
   .dropdown-menu-sm-start {
     --position: start;
   }
@@ -3505,6 +3512,9 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
+  .nav-link {
+    font-size: 12pt;
+  }
   .dropdown-menu-md-start {
     --position: start;
   }
@@ -3832,7 +3842,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: var(--nav-link-padding-y) var(--nav-link-padding-x);
-  font-size: var(--nav-link-font-size);
+  font-size: 14pt;
   font-weight: var(--nav-link-font-weight);
   color: var(--nav-link-color);
   text-decoration: none;
@@ -3929,6 +3939,11 @@ textarea.form-control-lg {
 .nav-fill .nav-item {
   flex: 1 1 auto;
   text-align: center;
+}
+
+.nav-item {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .nav-justified > .nav-link,
@@ -12065,7 +12080,7 @@ textarea.form-control-lg {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    /* width: 80%; */
     border-radius: 7px;
 }
 
