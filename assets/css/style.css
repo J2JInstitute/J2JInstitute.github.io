@@ -18,10 +18,12 @@ body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--background);
     color: var(--text-color);
+    transition: background-color 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 main {
-    padding-left: 1rem;
+    /* padding-top: 0rem; */
+    padding-left: 2rem;
 }
 
 a {
@@ -37,7 +39,7 @@ a:hover {
     top: 0px;
     overflow: hidden;
     position: sticky;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
     background-color: var(--sec-background-alpha);
     transition: all 0.2s ease-in-out;
     box-shadow: var(--shadow-color) 0px 2px;
@@ -51,7 +53,7 @@ a:hover {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 }
   
 .navbar a:hover {
@@ -66,6 +68,10 @@ a:hover {
   
 .navbar .icon {
     display: none;
+}
+
+.navbar a.themeBtn {
+    float: right;
 }
   
 /* SmallScreens */
@@ -99,4 +105,36 @@ a:hover {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+}
+
+#dark {
+    display: none;
+}
+
+.light {
+    --background: #dffbff;
+    --sec-background: #aae4ff;
+    --background-alpha: #dffbff80;
+    --sec-background-alpha: #aae4ff80;
+    --text-color: #111111;
+    --sec-text-color: #222222;
+    --ter-text-color: #333333;
+    --shadow-color: #22222280;
+    --link-color: #00aeff;
+    --transparent: #00000000;
+    --alt-text-color: #ffffff;
+}
+
+.dark {
+    --background: #02070c;
+    --sec-background: #0b2844;
+    --background-alpha: #02070c80;
+    --sec-background-alpha: #0b284480;
+    --text-color: #ffffff;
+    --sec-text-color: #eeeeee;
+    --ter-text-color: #ddddddd;
+    --shadow-color: #22222280;
+    --link-color: #00f7ff;
+    --transparent: #00000000;
+    --alt-text-color: #111111;
 }

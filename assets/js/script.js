@@ -7,3 +7,12 @@ function toggleNav() {
         x.className = "navbar";
     }
 }
+
+function toggleTheme() {
+    var body = document.body;
+    if (body.className === "light") {
+        body.className = "dark";
+    } else {
+        body.className = "light";
+    }
+}
