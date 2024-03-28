@@ -3,57 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J2J Institute</title>
-
-
+    <title>J2J Institute - Home</title>
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+    <!-- javascript -->
+    <script defer src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/fontawesome.js"></script>
+    <script defer src="./assets/js/jquery.js"></script>
+    <script defer src="./assets/js/tilt.jquery.js"></script>
+        
 </head>
 <body>
     
-    <div class="nav">
-        <li class="navbar">
-            <ul class="navbar-item">
-                <a href="./index.html" class="navbar-link">
-                    <i class="fa fa-home"></i>
-                    <span class="navbar-text">Home</span>
-                </a>
-            </ul>
-            <ul class="navbar-item">
-                <a href="./index.html" class="navbar-link">
-                    <i class="fa fa-home"></i>
-                    <span class="navbar-text">Home</span>
-                </a>
-            </ul>
-            <ul class="navbar-item">
-                <a href="./index.html" class="navbar-link">
-                    <i class="fa fa-home"></i>
-                    <span class="navbar-text">Home</span>
-                </a>
-            </ul>
-            <ul class="navbar-item">
-                <a id="themeButton" class="navbar-link">
-                    <i class="fa fa-sun"></i>
-                    <span class="navbar-text">Theme</span>
-                </a>
-            </ul>
-        </li>
-    </div>
+    <div class="navbar" id="navbarr">
+        <a href="/index.html" class="logo-text">
+            J2J Institute
+        </a>
+        <!-- <div class="dropdown">
+            <a href="#courses">Timings</a>
+            <div class="dropdown-content">
+              <a href="javascript:void(0)">Morning Batch</a>
+              <a href="javascript:void(0)">Noon Batch</a>
+            </div>
+        </div> -->
+        <a href="#courses"><i class="fa fa-indian-rupee-sign"></i> Pricing</a>
+        <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
+        <a href="#about"><i class="fa fa-user"></i> About</a>
+        <a href="javascript:void(0)" class="themeBtn" id="themee" onclick="toggleTheme()">
+            <i class="fa fa-sun" id="light"></i> <i class="fa fa-moon" id="dark"></i> Theme
+        </a>
+        <a href="javascript:void(0)" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+  </div>
 
     <main>
 
-        <h1>coming soon...</h1>
-        <p>New paragraph</p>
+        <img class="centered-image" src="./assets/img/classroom.jpg" alt="classroom">
+
+        <br id="courses">
+        <br>
+        <br>
+        <!-- ^^^ Those breaks are made to make sure that the content isnt covered/blurred by the navbar -->
+        <!-- Thats why always add the id on a br and add 2 more <br> tags to make it look better and redirect to the perfect position -->
+        <!-- Also add the <br> tags only when theres matter above the tags  -->
+        <h2>Courses + Pricing</h2>
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="toggleTab(event, 'morning')" id="defaultOpenTab">Morning</button>
+            <button class="tablinks" onclick="toggleTab(event, 'noon')">Noon</button>
+        </div>
+        
+        <!-- Tab content -->
+        <div id="morning" class="tabcontent">
+            <h3>Morning Batch</h3>
+            <h4>Timings: 11:00 AM - 01:00 PM</h4>
+            <p>What you learn: </p>
+            <p></p>
+        </div>
+        
+        <div id="noon" class="tabcontent">
+            <h3>Noon Batch</h3>
+            <h4>Timings: 3:00 PM - 5:00 PM</h4>
+            <p>What you learn: </p>
+            <p></p>
+        </div>
+
+        <br>
+
+        <br id="contact">
+        <br>
+        <br>
+        <h2>Contact us</h2>
+        <div class="dropdown">
+            <a href="#">ASDASD</a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div> 
+        ...............
+        
+        <br>
+
+        <br id="about">
+        <br>
+        <br>
+        <h2>About us</h2>
+
+        ..............
+
+        <br>
+        <br><br><br>
 
     </main>
-    <script src="./assets/js/bootstrap.js"></script>
-    <script src="./assets/js/fontawesome.js"></script>
-    <script src="./assets/js/app.js"></script>
 
 </body>
 </html>
