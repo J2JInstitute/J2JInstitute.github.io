@@ -25,7 +25,7 @@
         <a href="/index.html" class="logo-text">
             J2J Institute
         </a>
-        <a href="#courses">Courses</a>
+        <a href="#courses" class="dropdown">Courses</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
         <a href="javascript:void(0)" class="themeBtn" id="themee" onclick="toggleTheme()">
@@ -37,7 +37,7 @@
   </div>
 
     <main>
-        
+
         <img class="centered-image" src="./assets/img/classroom.jpg" alt="classroom">
 
         <br id="courses">
@@ -47,8 +47,26 @@
         <!-- Thats why always add the id on a br and add 2 more <br> tags to make it look better and redirect to the perfect position -->
         <!-- Also add the <br> tags only when theres matter above the tags  -->
         <h2>Courses + Pricing</h2>
-
-        ............
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="toggleTab(event, 'morning')" id="defaultOpenTab">Morning</button>
+            <button class="tablinks" onclick="toggleTab(event, 'noon')">Noon</button>
+        </div>
+        
+        <!-- Tab content -->
+        <div id="morning" class="tabcontent">
+            <h3>Morning Batch</h3>
+            <h4>Timings: 11:00 AM - 01:00 PM</h4>
+            <p>What you learn: </p>
+            <p></p>
+        </div>
+        
+        <div id="noon" class="tabcontent">
+            <h3>Noon Batch</h3>
+            <h4>Timings: 3:00 PM - 5:00 PM</h4>
+            <p>What you learn: </p>
+            <p></p>
+        </div>
 
         <br>
 
@@ -69,6 +87,7 @@
         ..............
 
         <br>
+        <br><br><br>
 
     </main>
 
