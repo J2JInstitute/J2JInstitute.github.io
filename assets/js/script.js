@@ -37,4 +37,4 @@ function toggleTab(evt, tab) {
     }
     document.getElementById(tab).style.display = "block";
     evt.currentTarget.className += " active";
-  } 
+}
