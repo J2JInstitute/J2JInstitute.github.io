@@ -126,10 +126,10 @@ a:hover {
 }
 
 .dark {
-    --background: #02070c;
-    --sec-background: #0b2844;
-    --background-alpha: #02070c80;
-    --sec-background-alpha: #0b284480;
+    --background: #001427;
+    --sec-background: #02070c;
+    --background-alpha: #0b284480;
+    --sec-background-alpha: #02070c80;
     --text-color: #ffffff;
     --sec-text-color: #eeeeee;
     --ter-text-color: #ddddddd;
