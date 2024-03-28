@@ -1,15 +1,102 @@
 :root {
-    --background: #aae4ff;
+    --background: #dffbff;
+    --sec-background: #aae4ff;
+    --background-alpha: #dffbff80;
+    --sec-background-alpha: #aae4ff80;
     --text-color: #111111;
+    --sec-text-color: #222222;
+    --ter-text-color: #333333;
+    --shadow-color: #22222280;
+    --link-color: #00aeff;
+    --transparent: #00000000;
+    --alt-text-color: #ffffff;
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Outfit', sans-serif;
     background-color: var(--background);
     color: var(--text-color);
 }
 
 main {
-    padding-top: 0;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+a:hover {
+    color: var(--link-color);
+}
+
+.navbar {
+    top: 0px;
+    overflow: hidden;
+    position: sticky;
+    backdrop-filter: blur(5px);
+    background-color: var(--sec-background-alpha);
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    color: var(--sec-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+}
+  
+.navbar a:hover {
+    background-color: var(--background-alpha);
+    color: var(--ter-text-color);
+}
+  
+.navbar a.active {
+    background-color: var(--link-color);
+    color: var(--alt-text-color);
+}
+  
+.navbar .icon {
+    display: none;
+}
+  
+/* SmallScreens */
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive {
+        position: sticky;
+    }
+    .navbar.responsive .icon {
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* LargeScreens */
+@media screen and (min-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
