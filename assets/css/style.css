@@ -108,8 +108,9 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: var(--transparent) 2px solid;
     border-radius: 5px;
+    border: var(--transparent) 2px solid;
+    transition: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .centered-image:hover {
     border: var(--sec-text-color) 2px solid;
@@ -137,6 +138,7 @@ a:hover {
     font-family: 'Outfit', sans-serif;
     border: var(--sec-text-color) 1px solid;
     box-shadow: 0 0 10px 1px var(--shadow-color);
+    transition: background-color 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.25s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
 
 .tab button:hover {
@@ -144,8 +146,8 @@ a:hover {
 }
 
 .tab button.active {
-    color: var(--alt-text-color);
     border-radius: 5px;
+    color: var(--alt-text-color);
     background-color: var(--link-color);
 }
 
@@ -170,14 +172,17 @@ a:hover {
     min-width: 160px;
     position: absolute;
     backdrop-filter: blur(5px);
-    background-color: var(--sec-background-alpha);
+    background-color: var(--glass-background);
     box-shadow: 0px 8px 16px 0px var(--shadow-color);
 }
 .dropdown-content a {
-    color: black;
+    color: var(--text-color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+}
+.dropdown-content a:hover {
+    color: var(--link-color);
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -209,6 +214,42 @@ a:hover {
     scale: 1.1;
 }
 
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    position: static;
+    min-height: 300px;
+    text-align: center;
+    justify-content: space-between;
+    color: var(--ter-text-color);
+    border-top: 2px solid var(--glass-outline);
+    background-color: var(--glass-background);
+}
+
+.footer-left {
+    float: left;
+}
+.footer-right {
+    float: right;
+}
+
+.social-links {
+    color: var(--ter-text-color);
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.youtube:hover {
+    color: #ff1100;
+}
+.instagram:hover {
+    color: #c300ff;
+}
+.mail:hover {
+    color: #00c3ff;
+}
 
 /* SmallScreens */
 @media screen and (max-width: 600px) {
@@ -237,6 +278,15 @@ a:hover {
     }
     .card {
         min-width: 90%;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer-left {
+        float: none;
+    }
+    .footer-right {
+        float: none;
     }
 }
 
