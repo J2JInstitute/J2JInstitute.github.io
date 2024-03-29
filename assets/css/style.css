@@ -10,6 +10,8 @@
     --link-color: #00aeff;
     --transparent: #00000000;
     --alt-text-color: #ffffff;
+    --glass-background: rgba(255, 255, 255, 0.45);
+    --glass-outline: rgba(255, 255, 255, .25);
     scroll-behavior: smooth;
 }
 
@@ -182,22 +184,23 @@ a:hover {
 }
 
 .card-container {
+    justify-content:space-evenly;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .card {
     margin: 2rem;
-    min-width: 300px;
+    min-width: 25vw;
     min-height: 200px;
     justify-content: space-between;
-    max-width: 500px;
+    max-width: 25vw;
     height: 300px;
-    padding: 35px;
-    border: 1px solid rgba(255, 255, 255, .25);
+    padding: 25px;
+    border: 1px solid var(--glass-outline);
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: var(--glass-background);
     box-shadow: 0 0 10px 1px var(--shadow-color);
     transition: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -233,7 +236,7 @@ a:hover {
         text-align: left;
     }
     .card {
-        min-width: 90vw;
+        min-width: 90%;
     }
 }
 
