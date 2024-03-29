@@ -1,8 +1,8 @@
 :root {
     --background: #dffbff;
     --sec-background: #aae4ff;
-    --background-alpha: #dffbff80;
-    --sec-background-alpha: #aae4ff80;
+    --background-alpha: #dffbffcc;
+    --sec-background-alpha: #aae4ffcc;
     --text-color: #111111;
     --sec-text-color: #222222;
     --ter-text-color: #333333;
@@ -222,8 +222,8 @@ a:hover {
 .light {
     --background: #dffbff;
     --sec-background: #aae4ff;
-    --background-alpha: #dffbff80;
-    --sec-background-alpha: #aae4ff80;
+    --background-alpha: #dffbffcc;
+    --sec-background-alpha: #aae4ffcc;
     --text-color: #111111;
     --sec-text-color: #222222;
     --ter-text-color: #333333;
@@ -236,8 +236,8 @@ a:hover {
 .dark {
     --background: #001427;
     --sec-background: #02070c;
-    --background-alpha: #0b284480;
-    --sec-background-alpha: #02070c80;
+    --background-alpha: #0b2844cc;
+    --sec-background-alpha: #02070ccc;
     --text-color: #ffffff;
     --sec-text-color: #eeeeee;
     --ter-text-color: #ddddddd;
