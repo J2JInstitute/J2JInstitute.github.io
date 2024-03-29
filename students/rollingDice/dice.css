@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(0, 162, 255);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    background-color: rgb(255, 62, 62);
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgb(112, 0, 0);
+    text-align: center;
+}
+#dice{
+    height: 200px;
+    width: 200px;
+    display: block;
+    border-radius: 55px 60px 110px 100px;
+    margin-top: -100px;
+    margin-left: 100px;
+    box-shadow: 10px 10px 50px rgb(0, 0, 0);
+    
+}
+#Roll{
+    width: 75px;
+    margin-top: 10px;
+    background-color: rgb(234, 255, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+#Roll:hover{
+    background-color: yellowgreen;
+    width: 80px;
+    height: 40px;
+    cursor:pointer;
+}
+
+#shownum{
+    color: rgb(4, 0, 122);
+    font-size: 2em;
+    font-family:Geneva;
+    margin-top: 100px;
+}
+.diceroll{
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.diceroll img{
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    animation-name: anime;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+#sound{
+    display: none;
+}
+#result{
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+}
+@keyframes anime{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
