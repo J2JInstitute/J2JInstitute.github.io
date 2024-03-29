@@ -190,7 +190,6 @@ function check() {
         mp3.innerHTML='<audio controls autoplay id="sound"><source src="/assets/Mp3/Draw.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
-        countOrangeWin++
     }
     resultWatermelonWin.innerHTML="🍉(Watermelon) won- "+countWatermelonWin
     resultOrangeWin.innerHTML="🍊(orange) won- "+countOrangeWin
