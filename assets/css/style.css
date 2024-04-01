@@ -213,6 +213,9 @@ a:hover {
 .card:hover {
     scale: 1.1;
 }
+.card-footer {
+    align-items: flex-end;
+}
 
 .footer {
     left: 0;
@@ -222,13 +225,19 @@ a:hover {
     padding: 2rem;
     position: static;
     min-height: 300px;
-    text-align: center;
+    text-align: left;
     justify-content: space-between;
     color: var(--ter-text-color);
     border-top: 2px solid var(--glass-outline);
     background-color: var(--glass-background);
 }
 
+.footer-center {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .footer-left {
     float: left;
 }
@@ -286,6 +295,7 @@ a:hover {
         float: none;
     }
     .footer-right {
+        text-align: right;
         float: none;
     }
 }
