@@ -5,7 +5,9 @@
 }
 
 body {
-    background-color: rgb(1, 130, 199);
+    background: linear-gradient(rgb(0, 166, 255) 10%,rgb(251, 41, 251) 100%);
+    background-size: cover;
+    height: 100vh;
 }
 
 h1, h3 {
