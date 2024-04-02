@@ -88,6 +88,10 @@ a:hover {
     color: var(--alt-text-color);
 }
 
+.logo-text:hover {
+    color: #ffa600;
+}
+
 .navbar a.active {
     background-color: var(--link-color);
     color: var(--alt-text-color);
@@ -295,7 +299,7 @@ a:hover {
         float: none;
     }
     .footer-right {
-        text-align: right;
+        text-align: center;
         float: none;
     }
 }
