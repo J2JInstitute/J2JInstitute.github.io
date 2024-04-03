@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrot Game by Abhishek Ashwathappa</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="parrot.css">
+    <!-- javascript -->
+    <script defer src="/assets/js/script.js"></script>
+    <script defer src="/assets/js/fontawesome.js"></script>
+    <script defer src="/assets/js/jquery.js"></script>
+    <script defer src="/assets/js/tilt.jquery.js"></script>
+    <script defer src="parrot.js"></script>
+</head>
+<body>
+    
+    <div class="navbar" id="navbarr">
+        <a href="/index.html" class="logo-text">
+            J2J Institute
+        </a>
+        <a href="#courses"><i class="fa fa-indian-rupee-sign"></i> Pricing</a>
+        <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
+        <a href="#about"><i class="fa fa-user"></i> About</a>
+        <a href="javascript:void(0)" class="themeBtn" id="themee" onclick="toggleTheme()">
+            <i class="fa fa-sun" id="light"></i> <i class="fa fa-moon" id="dark"></i> Theme
+        </a>
+        <a href="javascript:void(0)" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <main>
+      <div class="game-details">
+        <p class="score">Appels ate by parrot  : 0</p>
+        <p class="high-score">Heighest appels ate by parrot  : 0</p>
+        <p class="condition">Don't make parrot to hit the wall</p>
+        <p class="condition">Please play in laptop or desktop</p>
+      </div>
+      <div class="wrapper">
+        <div class="play-board"></div>
+        <div class="buttoncontrols">
+          <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+          <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+          <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+          <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+        </div>
+      </div>
+
+    </main>
+    
+</body>
+</html>
