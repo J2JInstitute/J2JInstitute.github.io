@@ -227,8 +227,8 @@ a:hover {
     width: 100%;
     display: flex;
     padding: 2rem;
-    position: fixed;
-    min-height: 300px;
+    position: static;
+    min-height: 200px;
     text-align: left;
     justify-content: space-between;
     color: var(--ter-text-color);
