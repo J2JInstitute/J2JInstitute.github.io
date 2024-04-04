@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(rgb(0, 166, 255) 10%,rgb(251, 41, 251) 100%);
+    background-size: cover;
+    height: 100vh;
+}
+
+h1, h3 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#row-1, #row-2, #row-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin: 2px;
+    border-radius: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+    font-size: 3.5em;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#resultText, #reset-btn {
+    visibility: hidden;
+}
+
+#reset-btn {
+    width: 100px;
+    height: 50px;
+    border-width: 0;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    font-size: 1.5em;
+}
+
+#reset-btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+#mp3{
+    display: none;
+}
+#resultWatermelonWin{
+    margin: 5px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    font-size: 1.5em;
+}
+#resultOrangeWin{
+    font-family:'Franklin Gothic Medium';
+    text-align: center;
+    font-size: 1.5em;
+}
+#resultText{
+    font-size: 2em;
+}
+#heading{
+    font-size: 3em;
+    color: rgb(217, 255, 0);
+}
+#chance{
+    font-size: 1.5em;
+    color: rgb(250, 255, 201);
+}
