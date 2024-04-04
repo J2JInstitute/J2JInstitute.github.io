@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator by Nayan RajendraPrasad</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="calculator.css">
+    <!-- javascript -->
+    <script defer src="/assets/js/script.js"></script>
+    <script defer src="/assets/js/fontawesome.js"></script>
+    <script defer src="/assets/js/jquery.js"></script>
+    <script defer src="/assets/js/tilt.jquery.js"></script>
+</head>
+<body>
+    
+    <div class="navbar" id="navbarr">
+        <a href="/index.html" class="logo-text">
+            J2J Institute
+        </a>
+        <a href="#courses"><i class="fa fa-indian-rupee-sign"></i> Pricing</a>
+        <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
+        <a href="#about"><i class="fa fa-user"></i> About</a>
+        <a href="javascript:void(0)" class="themeBtn" id="themee" onclick="toggleTheme()">
+            <i class="fa fa-sun" id="light"></i> <i class="fa fa-moon" id="dark"></i> Theme
+        </a>
+        <a href="javascript:void(0)" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <form>
+                    <div class="display">
+                        <input type="text" name="display">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" class="btn" onclick="display.value = ''">
+                        <input type="button" value="DE" class="btn" onclick="display.value = display.value.toString().slice(0,-1)"> 
+                        <input type="button" value="."  onclick="display.value += '.'">
+                        <input type="button" value="/"  onclick="display.value += '/'" class="symbol">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="display.value += '7'">
+                        <input type="button" value="8" onclick="display.value += '8'">
+                        <input type="button" value="9" onclick="display.value += '9'">
+                        <input type="button" value="*" onclick="display.value += '*'" class="symbol" title="click 2 times to get power">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="display.value += '4'">
+                        <input type="button" value="5" onclick="display.value += '5'">
+                        <input type="button" value="6" onclick="display.value += '6'">
+                        <input type="button" value="-" onclick="display.value += '-'" class="symbol">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="display.value += '1'">
+                        <input type="button" value="2" onclick="display.value += '2'">
+                        <input type="button" value="3" onclick="display.value += '3'">
+                        <input type="button" value="+" onclick="display.value += '+'" class="symbol">
+                        
+                    </div>
+                    <div>
+                        <input type="button" value="0" onclick="display.value += '0'">
+                        <input type="button" value="(" onclick="display.value += '('">
+                        <input type="button" value=")" onclick="display.value += ')'">
+                        <input type="button" value="=" class="equal" onclick="display.value = eval(display.value)">
+                        
+                    </div>
+                </form>
+    
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>

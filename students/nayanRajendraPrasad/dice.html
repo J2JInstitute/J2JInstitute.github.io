@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TicTacToe by Nayan Rajendra Prasad</title>
+    <title>dice by Nayan Rajendra Prasad</title>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/assets/css/fontawesome.css">
     <link rel="stylesheet" href="/assets/css/bootstrap-grid.css">
     <link rel="stylesheet" href="dice.css">
+    <link rel="icon" href="/assets/diceImages/dice-icon.png">
     <!-- javascript -->
     <script defer src="/assets/js/script.js"></script>
     <script defer src="/assets/js/fontawesome.js"></script>
@@ -21,6 +22,7 @@
     <script defer src="dice.js"></script>
 </head>
 <body>
+    
     <div class="navbar" id="navbarr">
         <a href="/index.html" class="logo-text">
             J2J INSTITUTE
@@ -37,17 +39,20 @@
         </a>
     </div>
     <main>
-        <div id="box">
-        <div id="container">
-            <button id="Roll" onclick="convert()">Roll</button>
-            <div id="images" class="diceroll"></div>
-            <img src="/assets/diceImages/dice.jpg" id="dice">
+        <div class="outerbox">
+            <div class="innerbox">
+                <button id="Rollbutton" onclick="convert()">Roll</button>
+                <img src="\assets\diceImages\dice.webp" id="dice">
+                <div id="images" class="diceroll"></div>
     
-            <p id="shownum"></p>
-            <p id="sound"></p>
+                <p id="shownum"></p>
+                <p id="sound"></p>
+            </div>
         </div>
+        <div class="message">
+            <p>Let's check you'r lucky number today click Roll button</p>
         </div>
-       
+
     </main>
     
     <div class="footer">

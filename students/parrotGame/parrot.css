@@ -1,0 +1,88 @@
+/* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  
+  background: #126bab;
+}
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  background: linear-gradient(to right,rgb(255, 0, 0),yellow,blue,green);
+}
+.game-details {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-10%);
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 5px 27px;
+  z-index: 1;
+}
+.play-board {
+  border: 20px solid transparent; /* Set a transparent border */
+  border-image: url('/assets/parrot/image.png') 20 repeat; 
+  display: grid;
+  background: #ffffff;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.play-board .food {
+  background-image: url("/assets/parrot/apple.png");
+  height: 16px;
+  width: 16px;
+}
+.play-board .head {
+  background-image: url("/assets/parrot/parrot 1.png");
+  height: 16px;
+  width: 16px;
+}
+.buttoncontrols {
+  margin-left: 35%;
+  display: none;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: 30px 30px;
+}
+.buttoncontrols i {
+  padding: 5px;
+  text-align: center;
+  font-size: 1rem;
+  color: #585858;
+  cursor: pointer;
+}
+.fa-arrow-left-long, .fa-arrow-right-long, .fa-arrow-up-long, .fa-arrow-down-long{
+  background-color: rgb(144, 229, 140);
+  border: solid 1px black;
+  border-radius: 5px;
+}
+.fa-arrow-down-long{
+  grid-template-columns: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.fa-arrow-left-long, .fa-arrow-right-long{
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.score, .high-score{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.condition{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(118, 0, 118);
+}
