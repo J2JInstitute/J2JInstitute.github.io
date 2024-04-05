@@ -278,6 +278,11 @@ a:hover {
     color: #00c3ff;
 }
 
+.map {
+    width: 600px;
+    height: 450px;
+}
+
 /* SmallScreens */
 @media screen and (max-width: 600px) {
     .navbar a:not(.icon){
@@ -315,6 +320,10 @@ a:hover {
     .footer-right {
         text-align: center;
         float: none;
+    }
+    .map {
+        width: 90vw;
+        height: 450px;
     }
 }
 
