@@ -6,6 +6,7 @@
 
 .innerbox{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     background: var(--glass-background);
@@ -16,7 +17,7 @@
     width: 350px;
 }
 #dice{
-    position: fixed;
+    position: absolute;
     left: calc(50% - (150px/2) - 10px);
     display: flex;
     justify-content: center;
@@ -50,7 +51,7 @@
 }
 
 #images img{
-    position: fixed;
+    position: absolute;
     left: calc(50% - (150px/2) - 10px);
     display: flex;
     justify-content: center;
