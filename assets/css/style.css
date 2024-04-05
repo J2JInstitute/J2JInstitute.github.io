@@ -283,6 +283,10 @@ a:hover {
     height: 450px;
 }
 
+.larger {
+    font-size: larger;
+}
+
 /* SmallScreens */
 @media screen and (max-width: 600px) {
     .navbar a:not(.icon){
