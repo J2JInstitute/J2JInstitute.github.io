@@ -9,15 +9,13 @@ body{
     height: 100vh;
 }       
 #box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #innerbox{
+    margin: 5rem;
     padding: 50px;
     text-align: center;
     border-radius: 10px;
@@ -25,8 +23,8 @@ body{
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 #txt{
-    color: rgb(0, 0, 138);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* color: rgb(0, 0, 138);
+    font-family:Verdana, Geneva, Tahoma, sans-serif; */
     font-size: 2em;
 }
 #input{
@@ -45,7 +43,7 @@ body{
 }
 #submit:hover{
     background-color: rgb(0, 164, 0);
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
 }
 #Fharenheit{
     font-size: 1.5em;
