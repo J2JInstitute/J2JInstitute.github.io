@@ -1,8 +1,10 @@
-const formulaSquare = document.getElementById("area-formula-square");
+  const formulaSquare = document.getElementById("area-formula-square");
     const formulaRectangel = document.getElementById("area-formula-rectangle");
     const formulaTriangle = document.getElementById("area-formula-triangle");
     const formulaCircle = document.getElementById("area-formula-circle");
     const formularhombus = document.getElementById("area-formula-rhombus");
+
+    const formula = document.getElementById("formula");
 
     formulaSquare.style.display='none';
         formulaRectangel.style.display='none';
